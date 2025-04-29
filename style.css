@@ -1,0 +1,149 @@
+/* Import a nice futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #0d0d0d; /* pure black background */
+  color: #ffffff; /* pure white text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00ffe7; /* neon cyan */
+  text-shadow: 0 0 10px #00ffe7;
+}
+
+.main {
+  width: 100%;
+  max-width: 500px;
+  background-color: #1a1a1a; /* dark gray background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.name input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.message-container {
+  list-style: none;
+  margin-bottom: 15px;
+  height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #00ffe7 #1a1a1a;
+}
+
+.message-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background-color: #00ffe7;
+  border-radius: 10px;
+}
+
+.message-left, .message-right {
+  margin-bottom: 10px;
+}
+
+.message-left p, .message-right p {
+  padding: 10px 15px;
+  border-radius: 12px;
+  max-width: 70%;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.message-left p {
+  background-color: #2a2a2a;
+  align-self: flex-start;
+  color: #ffffff;
+}
+
+.message-right p {
+  background-color: #00ffe7;
+  color: #0d0d0d;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.message span {
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 5px;
+  color: #999;
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+}
+
+.send-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #00ffe7;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #00cccc;
+}
+
+.client-total {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.typing-feedback {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #888;
+}
