@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHAT APP</title>
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>CHAT IO SAIF</h1>
+
+  <div class="main">
+
+    <div class="name">
+      <span><i class="far fa-user"></i></span>
+      <input type="text" id="name-input" class="name-input" value="user" maxlength="20" placeholder="Enter your name">
+    </div>
+
+  
+    <div id="typing" class="typing-feedback" style="font-style: italic; color: gray; margin: 10px;"></div>
+
+    <ul class="message-container" id="message-container">
+
+    </ul>
+
+  
+    <form class="message-form" id="message-form">
+      <input type="text" name="message" id="message-input" class="message-input" placeholder="Type your message...">
+      <div class="v-divider"></div>
+      <button type="submit" class="send-button">
+        Send <span><i class="fas fa-paper-plane"></i></span>
+      </button>
+    </form>
+
+  </div>
+
+  <h3 class="client-total" id="client-total">Clients total: 0</h3>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>
